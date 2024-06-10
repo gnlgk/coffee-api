@@ -1,0 +1,96 @@
+.header__logo {
+    a {
+        display: flex;
+        margin: 70px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 5px;
+
+        span {
+            display: block;
+            font-size: 3.2rem;
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+    }
+}
+
+.header__menu {
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--white400);
+        padding: 15px 10px;
+
+        li {
+            a {
+                display: inline-block;
+                font-size: 1rem;
+                margin: 10px 35px;
+                position: relative;
+
+                .check__icon {
+                    width: 24px;
+                    height: 24px;
+                    border: 1px solid var(--black);
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 6px;
+
+                }
+
+                .indicator {
+                    width: 24px;
+                    height: 24px;
+                    background-color: #6b4226;
+                    position: absolute;
+                    left: 0px;
+                    top: 3px;
+                }
+
+                .indicator::after {
+                    content: '';
+                    position: absolute;
+                    left: 7px;
+                    top: 2px;
+                    width: 9px;
+                    height: 14px;
+                    border: solid var(--white);
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                }
+
+                input:checked~.indicator {
+                    background-color: #031e45;
+                }
+
+                input:checked~.indicator::after {
+                    display: block;
+                }
+
+            }
+        }
+    }
+}
+
+// @media (max-width:960px) {
+//     .header__logo {
+//         position: fixed;
+//         left: 0;
+//         top: 0;
+
+//         a {
+//             span {
+//                 font-size: 0.8rem;
+//             }
+//         }
+//     }
+// }
