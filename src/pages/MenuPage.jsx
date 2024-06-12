@@ -8,7 +8,8 @@ const MenuPage = () => {
     const { coffeeId } = useParams();
     const [coffeeData, setCoffeeData] = useState([]);
     const [error, setError] = useState(null);
-    console.log(coffeeId)
+    const [tooltipData, setTooltipData] = useState(null);
+
     useEffect(() => {
         const fetchCoffeeData = async () => {
             try {
@@ -39,8 +40,12 @@ const MenuPage = () => {
                         <div className='coffee__Box' key={index}>
                             <div className="list__div">
                                 <img className='img' src={coffee.imageURL} alt={coffee.title} />
-
                                 <h3 className='title'>{coffee.title}</h3>
+                                <div className="tooltip">
+                                    <p>{coffee.title}
+                                        {coffee.title}
+                                        {coffee.title}</p>
+                                </div>
                             </div>
                         </div>
                     ))
