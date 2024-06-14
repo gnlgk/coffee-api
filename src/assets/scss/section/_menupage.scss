@@ -95,6 +95,7 @@
         .address {
             display: block;
             margin-top: 10px; 
+            overflow: hidden;
             &:hover {
                 text-decoration: underline;
                 text-underline-position: under;

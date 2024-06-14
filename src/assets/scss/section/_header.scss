@@ -1,4 +1,38 @@
+.header__upbutn {
+    position: relative;
+    width: 90%;
+    height: 2px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1.75rem;
 
+    button {
+        position: absolute;
+        width: 6.5rem;
+        height: 2.5rem;
+        left: 2.5rem;
+        top: -0.625rem;
+        border-radius: 50px;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #b9b7b5;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            background-color: #8b5e34;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        &:active {
+            background-color: #5a321b;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
 
 .header__logo {
     a {

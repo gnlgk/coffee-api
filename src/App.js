@@ -7,6 +7,7 @@ import Footer from './components/section/Footer';
 import Home from './pages/Home';
 import MenuPage from './pages/MenuPage';
 import SearchPage from './pages/SearchPage';
+import Producerpik from './pages/Producerpik';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/menu/:coffeeId" element={<MenuPage />} />
           <Route path="/search/:searchId" element={<SearchPage />} />
+          <Route path='/Producerpik' element={<Producerpik />} />
         </Routes>
       <Footer />
     </BrowserRouter>

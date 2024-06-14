@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { headerMenus } from '../../data/header';
-import '../../assets/scss/style.scss';
 
-
-
-const Header = () => {
+const Header = (hideMenu) => {
     const [checkedIndex, setCheckedIndex] = useState(null);
     const navigate = useNavigate();
 
@@ -14,8 +11,15 @@ const Header = () => {
         navigate(url);
     };
 
+    const handleButtonClick = () => {
+        navigate('/producerpik'); // 경로를 소문자로 통일
+    };
+
     return (
         <header id="header" role="banner">
+            <div className="header__upbutn">
+                <button onClick={handleButtonClick}>제작자 픽</button>
+            </div>
             <h1 className="header__logo">
                 <a href="/">
                     <span>coffeemenu</span>
