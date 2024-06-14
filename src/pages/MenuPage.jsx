@@ -8,6 +8,7 @@ const MenuPage = () => {
     const { coffeeId } = useParams();
     const [coffeeData, setCoffeeData] = useState([]);
     const [error, setError] = useState(null);
+    const [visibleLinks, setVisibleLinks] = useState({});
 
     useEffect(() => {
         const fetchCoffeeData = async () => {
@@ -26,6 +27,13 @@ const MenuPage = () => {
         };
         fetchCoffeeData();
     }, [coffeeId]);
+
+    const showLink = (index) => {
+        setVisibleLinks(prevState => ({
+            ...prevState,
+            [index]: true
+        }));
+    };
 
     if (error) {
         return <div>채널 정보를 불러오는 중에 에러가 발생했습니다: {error.message}</div>;
@@ -52,8 +60,14 @@ const MenuPage = () => {
                                                 </div>
                                             ))}
                                         </div>
-                                    )}                                    
-                                    <a href={coffee.address} target="_blank" rel="noopener noreferrer" className='address'>{coffee.address}</a>
+                                    )}
+                                    {visibleLinks[index] ? (
+                                        <a href={coffee.address} target="_blank" rel="noopener noreferrer" className='address'>{coffee.address}</a>
+                                    ) : (
+                                        <button onClick={() => showLink(index)} className="button-toggle">
+                                            더 보기
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </div>

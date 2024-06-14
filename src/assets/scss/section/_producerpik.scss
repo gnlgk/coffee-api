@@ -10,14 +10,24 @@
 .producerpik__content {
     max-width: 1200px;
     width: 100%;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     box-sizing: border-box;
     overflow: hidden;
     text-align: center;
 }
+.producerpik__content > p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0 0 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
 
 .producerpik__content h1 {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 /* 컬럼 스타일 */

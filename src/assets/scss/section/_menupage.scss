@@ -101,6 +101,27 @@
                 text-underline-position: under;
             }
         }
+
+        button {
+            display: flex;
+            background-color: #ae866c;
+            color: var(--white);
+            padding: 5px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #ad6e44;
+                color: var(--white);
+            }
+        
+            &:focus {
+                outline: none;
+            }
+        }
         
 
     }

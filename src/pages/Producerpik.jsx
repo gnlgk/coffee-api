@@ -73,6 +73,7 @@ const Producerpik = () => {
         <Main>
             <div className="producerpik__container">
                 <div className="producerpik__content">
+                    <p>저희 사이트에서 사용된 모든 이미지는 교육 목적으로만 사용되며, 이는 다른 사이트나 소유자의 동의 없이 상업적으로 사용되지 않을 것임을 약속합니다. 만약 이미지에 문제가 있다면 언제든지 연락주시기 바랍니다.</p>
                     <h1>Producer's Top 10</h1>
                     <div className="producerpik__columns">
                         <div className="producerpik__column" ref={leftColumnRef}>
