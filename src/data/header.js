@@ -40,9 +40,9 @@ export const headerMenus = [
         src: "/menu/dessert39"
     },
     {
-        title: "이디아",
+        title: "봄봄",
         icon: <BsYoutube />,
-        src: "/menu/ediya"
+        src: "/menu/bombom"
     },
     {
         title: "그루나루",

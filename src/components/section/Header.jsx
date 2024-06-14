@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { headerMenus } from '../../data/header';
 import '../../assets/scss/style.scss';
 
+
+
 const Header = () => {
     const [checkedIndex, setCheckedIndex] = useState(null);
     const navigate = useNavigate();
@@ -19,6 +21,7 @@ const Header = () => {
                     <span>coffeemenu</span>
                 </a>
             </h1>
+            
             <nav className="header__menu">
                 <ul className="menu container">
                     {headerMenus.map((menu, key) => (

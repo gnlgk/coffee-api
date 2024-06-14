@@ -4,7 +4,7 @@
     justify-content: space-between;
     gap: 30px;
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1200px) {
         grid-template-columns: repeat(3, 32%);
         gap: 15px;
     }
@@ -52,23 +52,55 @@
 
     .tooltip {
         width: 276px;
-        height: 340px;
+        min-height: 350px;
+        max-height: 450px;
         position: absolute;
         top: 0;
         left: 0;
         background-color: #6b4226;
         color: #fff;
-        padding: 30px;
+        padding: 20px;
         display: block;
         opacity: 0;
         /* 초기에는 투명도를 0으로 설정 */
         transition: opacity 0.5s;
         /* 트랜지션 효과 적용 */
         z-index: 10;
+        font-size: 14px;
 
-        >p {
-            white-space: pre-wrap;
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            margin-bottom: 10px;
         }
+
+        .titleeng {
+            margin-bottom: 10px;   
+        }
+        .desc {
+            border-bottom: 1px solid var(--white);   
+            padding-bottom: 10px;
+            overflow: hidden;
+        }
+        .info {
+            padding-top: 10px;
+            strong {
+                font-weight: 500;
+                font-size: 18px;
+                margin-bottom: 5px;
+                display: block;
+            }
+        }
+        .address {
+            display: block;
+            margin-top: 10px; 
+            &:hover {
+                text-decoration: underline;
+                text-underline-position: under;
+            }
+        }
+        
 
     }
 
@@ -79,7 +111,7 @@
 
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     .coffee__Box {
         .tooltip {
             width: 78%;

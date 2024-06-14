@@ -1,3 +1,6 @@
+body {
+    background-color: var(--white100);
+}
 #header {
     position: sticky;
     top: -132px;
@@ -5,13 +8,15 @@
     height: auto;
     background-color: var(--white);
     z-index: 20000;
+    padding-top: 1px;
 }
 
 #main {
     width: 100%;
+    height: auto;
     margin-top: 50px;
     margin-bottom: 70px;
-    background-color: #fafafa;
+    background-color: var(--white100);
 }
 
 #footer {
