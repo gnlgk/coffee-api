@@ -4,7 +4,7 @@
 
 # CoffeeMenu
 
-[사이트 방문](#)
+[사이트 방문](https://coffee-api-rosy.vercel.app/)
 
 ## 프로젝트 설명
 
@@ -22,7 +22,7 @@
 
 ### 타겟
 
-- 커피 애호가 및 바리스타
+- 커피 애호가
 - 다양한 커피 메뉴를 찾고자 하는 일반 사용자
 
 ### 겪었던 문제점
@@ -42,34 +42,11 @@
 
 Coffee Menu 이라는 브랜드 이름은 커피(Coffee) 와 메뉴(Menu) 가 결합된 단순하고 직관적인 의미를 담고 있습니다. "커피"는 다양한 커피 메뉴와 정보를 의미하고, "메뉴"는 각 프랜차이즈의 최신 메뉴를 제공한다는 의미를 담고 있습니다.
 
-### Favicon 디자인 아이디어
-
-Favicon은 커피 원두의 느낌을 살리면서 사이트의 분위기와 잘 어울려야 한다는 부분을 신경쓰며 작업했습니다.
-
-#### Favicon 디자인 후보
-
-<img src="https://github.com/gnlgk/coffee-api/assets/161446039/056c1652-62f6-444a-8ae5-20c1a03a6fb5" alt="image 43" width="100"/>
-<img src="https://github.com/gnlgk/coffee-api/assets/161446039/679e2843-2505-4101-a423-16e98881e998" alt="image 46" width="100"/>
-<img src="https://github.com/gnlgk/coffee-api/assets/161446039/a0b7e3eb-8cde-445a-b7b2-a584604abb97" alt="image 44" width="100"/>
-
 ### 색상
 
 밝으면서도 커피 고유의 따뜻한 느낌을 내기 위해 여러 색 조합을 시도하고 저희만의 색상 팔렛트를 완성했습니다.
 
 <img src="https://github.com/gnlgk/coffee-api/assets/161446039/545c2cef-ea35-4bca-8855-e5320f21d3aa" alt="image 49" width="90%"/>
-
----
-
-## 비즈니스 모델
-
-- 광고 수익: 커피 관련 제품 및 서비스 광고를 통한 수익 모델
-  <br/>
-
-- 프리미엄 기능 제공: 추가 기능 및 서비스를 제공하는 프리미엄 모델 도입
-
-<br/>
-
-- 데이터 분석 및 트렌드 제공: 데이터 기반의 분석 서비스를 제공하여 커피 업계 및 사용자들에게 유용한 정보 제공
 
 ---
 
@@ -126,10 +103,10 @@ Favicon은 커피 원두의 느낌을 살리면서 사이트의 분위기와 잘
 ## 👤 프로젝트 팀원
 
 박진아
-[Coffee Menu](), [Nmail](gnlgk@naver.com), [MainPage](https://gnlgk.github.io/class2024/)
+[github](https://github.com/gnlgk)
 
 최선화
-[Coffee Menu](), [Gmail](liarusen@gmail.com), [MainPage](https://sunhew.github.io/class2024/)
+[github](https://github.com/sunhew)
 
 ---
 
