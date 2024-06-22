@@ -37,13 +37,6 @@ const MenuPage = () => {
         }));
     };
 
-    const getImageUrl = (url) => {
-        if (url.startsWith('http://')) {
-            return url;
-        }
-        return url.replace('https://', 'http://');
-    };
-
     if (loading) {
         return <div className="loading">메뉴를 불러오는 중입니다...</div>;
     }
@@ -59,15 +52,15 @@ const MenuPage = () => {
                     coffeeData.map((coffee, index) => (
                         <div className='coffee__Box' key={index}>
                             <div className="list__div">
-                                <div className="img"
-                                    style={{ backgroundImage: `url(${getImageUrl(coffee.imageURL)})` }}
-                                ></div>
+                                <img className='img' src={coffee.imageURL} alt={coffee.title} data-http="http"/>
                                 <div className="content">
                                     <h3 className='title'>{coffee.title}</h3>
                                     <div className="tooltip">
                                         <h4>{coffee.title}</h4>
                                         <div className='titleeng'>{coffee.titleE}</div>
-                                        <div className='desc'>{coffee.description}</div>
+                                        <div className='desc'>
+                                            {coffee.description.length > 100 ? `${coffee.description.substring(0, 100)}...` : coffee.description}
+                                        </div>
                                         {coffee.information && (
                                             <div className='info'>
                                                 <strong>영양성분</strong>
