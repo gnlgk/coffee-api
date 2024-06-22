@@ -37,6 +37,13 @@ const MenuPage = () => {
         }));
     };
 
+    const getImageUrl = (url) => {
+        if (url.startsWith('http://')) {
+            return url;
+        }
+        return url.replace('https://', 'http://');
+    };
+
     if (loading) {
         return <div className="loading">메뉴를 불러오는 중입니다...</div>;
     }
@@ -53,7 +60,7 @@ const MenuPage = () => {
                         <div className='coffee__Box' key={index}>
                             <div className="list__div">
                                 <div className="img"
-                                 style={{ backgroundImage: `url(${coffee.imageURL})` }} 
+                                    style={{ backgroundImage: `url(${getImageUrl(coffee.imageURL)})` }}
                                 ></div>
                                 <div className="content">
                                     <h3 className='title'>{coffee.title}</h3>
@@ -92,4 +99,3 @@ const MenuPage = () => {
 };
 
 export default MenuPage;
-
