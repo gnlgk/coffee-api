@@ -52,9 +52,10 @@ const MenuPage = () => {
                     coffeeData.map((coffee, index) => (
                         <div className='coffee__Box' key={index}>
                             <div className="list__div">
-                                <div className="img"
-                                 style={{ backgroundImage: `url(${coffee.imageURL})` }}
-                                ></div>
+                            <div 
+                            className="img" 
+                            style={{ backgroundImage: `url('https://images.weserv.nl/?url=${coffee.imageURL}')` }}
+                            ></div>
                                 <div className="content">
                                     <h3 className='title'>{coffee.title}</h3>
                                     <div className="tooltip">
