@@ -37,6 +37,10 @@ const MenuPage = () => {
         }));
     };
 
+    const getImageURL = (url) => {
+        return url.startsWith('http://') ? `https://images.weserv.nl/?url=${url}` : url;
+    };
+
     if (loading) {
         return <div className="loading">메뉴를 불러오는 중입니다...</div>;
     }
@@ -52,10 +56,10 @@ const MenuPage = () => {
                     coffeeData.map((coffee, index) => (
                         <div className='coffee__Box' key={index}>
                             <div className="list__div">
-                            <div 
-                            className="img" 
-                            style={{ backgroundImage: `url('https://images.weserv.nl/?url=${coffee.imageURL}')` }}
-                            ></div>
+                                <div 
+                                    className="img" 
+                                    style={{ backgroundImage: `url('${getImageURL(coffee.imageURL)}')` }}
+                                ></div>
                                 <div className="content">
                                     <h3 className='title'>{coffee.title}</h3>
                                     <div className="tooltip">
