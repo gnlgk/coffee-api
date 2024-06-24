@@ -3,16 +3,12 @@ import { LuSearch } from 'react-icons/lu';
 import { useNavigate } from 'react-router-dom';
 
 const logos = [
-  { src: "http://www.caffebene.co.kr/images/common/logo.png", alt: "카페베네" },
-  { src: "http://canbus.kr/images/common/hd_logo.png?refresh=1718266965277", alt: "캔버스" },
   { src: "https://coffeebanhada.com/image/site/index/logo.gif", alt: "커반" },
   { src: "https://www.coffeebay.com/img/main/main_logo_on_tmp.png", alt: "커피베이" },
   { src: "https://composecoffee.com/layouts/KSOTheme_Starter/src/img/logo-dark.svg", alt: "컴포즈" },
   { src: "https://pic.dessert39.com/www/img/common/dessert39_simbol2.svg", alt: "디저트39" },
-  { src: "http://www.cafebombom.co.kr/img/plogo.png", alt: "봄봄" },
   { src: "https://www.coffine.co.kr/front/images/common/logo.png", alt: "그루나루" },
   { src: "https://www.hollys.co.kr/websrc/images/layout/logo_210302.gif", alt: "할리스" },
-  { src: "https://mmthcoffee.com/img/common/logo2.png", alt: "메머드" },
   { src: "https://paikdabang.com/wp-content/themes/paikdabang/assets/images/logo.png", alt: "빽다방" },
   { src: "https://www.starbucks.co.kr/common/img/common/logo.png", alt: "스타벅스" },
   { src: "https://www.theventi.co.kr/new/upload/frlogo/30927906_VFKq5TZS_20240214014119.gif", alt: "더벤티" },
