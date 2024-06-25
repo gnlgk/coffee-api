@@ -4,7 +4,7 @@
 
 # CoffeeMenu
 
-[사이트 방문](#)
+[사이트 방문](https://coffee-api-rosy.vercel.app/)
 
 ## 프로젝트 설명
 
@@ -16,25 +16,31 @@
 
 <img alt="Javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"  height="25px"/> <img alt="sass" src="https://img.shields.io/badge/sass-1572B6?style=for-the-badge&logo=sass&logoColor=white" height="25px"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" height="25px"/> <img src="https://img.shields.io/badge/react-512BD4?style=for-the-badge&logo=React&logoColor=white" height="25px">
 
-### 목표
+### goal
 
-- 다양한 커피 메뉴를 쉽게 검색하고 비교하는등의 기능을 제공하여 사용자들이 편안함을 보장.
+- 다양한 커피 메뉴를 쉽게 검색하고 추천하는 등의 기능을 제공하여 사용자들이 편안함을 보장.
 
-### 타겟
+## target
 
 - 커피 애호가 및 바리스타
 - 다양한 커피 메뉴를 찾고자 하는 일반 사용자
 
-### 겪었던 문제점
+## 트러블 슈팅
 
-1. **서로 다른 구조의 카페 사이트들의 크롤링** - 다양한 구조의 사이트에서 데이터를 수집하는 것이 어려웠습니다. 이를 해결하기 위해 각 사이트별로 맞춤형 크롤링 스크립트를 작성하여 데이터를 효율적으로 수집할 수 있었습니다.
-   <br/>
+1. 스트랩핑
 
-2. **크롤링 과정에서 겪었던 사이트의 보안 문제로 정보 수집의 어려움** - 일부 사이트는 보안 설정으로 인해 크롤링이 어려웠습니다. 이를 해결하기 위해 프록시 서버와 IP 로테이션을 사용하여 보안 문제를 극복하였습니다.
-   <br/>
+* 문제: 서로 다른 구조의 카페 사이트들에서의 데이터 수집의 어려움
+* 해결방법: 
+   - Chrome 개발자 도구 확인: 개발도구의 Elements에서 html구조를 파악하고 Copy selector을 이용하여 올바른 경로를 가져옴
+   - console.log로 데이터가 올바른 값을 가져오는지 일일히 확인
 
-3. **수집한 정보들을 리액트에 적용하는 과정** - 수집된 데이터를 리액트에 적용하는 과정에서 데이터 구조의 일관성을 유지하는 것이 어려웠습니다. 이를 해결하기 위해 데이터 정규화 및 상태 관리를 개선하여 일관된 데이터를 제공할 수 있었습니다
-   <br/>
+2. velcel로 배포했을 때 이미지 미표시
+
+* 문제: velcel로 배포했을 때 이미지가 뜨는게 있고 안나오는게 있음 
+* 해결방법: 
+   - Chrome 개발자 도구 확인: vercel이 기본적으로 https를 지원하기 때문에 Network에서 확인한 결과 python에서 스크랩핑해온 이미지경로가 https로 자동변경되어 이미지가 안나옴
+   - 이미지 프록시를 사용하여 이미지를 로드할 때 HTTP를 사용하는 대신, HTTPS를 사용하는 프록시 서버를 거쳐서 이미지를 가져오도록 설정할 수 있습니다. 
+   - 만약 이미지경로가 http라면 'https://images.weserv.nl/?url='를 추가하여 해결
 
 ---
 
